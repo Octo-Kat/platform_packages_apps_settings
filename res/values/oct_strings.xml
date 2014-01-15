@@ -42,4 +42,7 @@
     <string name="privacy_guard_manager_show_system_apps">Show built-in apps</string>
     <string name="privacy_guard_manager_filter_permissions">Permission filter</string>
 
+    <!-- Oct ota app -->
+    <string name="oct_ota_title">OctOTA</string>
+    <string name="oct_ota_summary">Check for the latest OctOS ROM updates</string>
 </resources>

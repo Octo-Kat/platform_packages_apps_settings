@@ -20,6 +20,13 @@
             android:key="bugreport"
             android:title="@*android:string/bugreport_title"
             android:dialogTitle="@*android:string/bugreport_title" />
+            
+    <!-- AppsOps Settings -->
+    <PreferenceScreen
+        android:fragment="com.android.settings.applications.AppOpsSummary"
+        android:icon="@drawable/ic_settings_applications"
+        android:title="@string/app_ops_settings"
+        android:id="@+id/appops_settings" />
 
     <PreferenceScreen
             android:key="local_backup_password"

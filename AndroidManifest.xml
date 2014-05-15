@@ -76,6 +76,8 @@
             android:requiredForAllUsers="true"
             android:supportsRtl="true">
 
+    <uses-library android:name="org.cyanogenmod.hardware" required="false" />
+
         <!-- Settings -->
 
         <activity android:name="Settings"
@@ -1745,7 +1747,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.oct.tentacles.fragments.more.MoreDeviceSettings"
+            android:name="com.android.settings.cyanogenmod.MoreDeviceSettings"
             android:label="@string/more_device_controls_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -17,16 +17,25 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
-    <!-- OctOTA -->
-    <PreferenceScreen android:key="oct_ota"
-        android:title="@string/oct_ota_title"
-        android:summary="@string/oct_ota_summary">
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetPackage="com.oct.ota"
-            android:targetClass="com.oct.ota.OctOTA" />
-    </PreferenceScreen>
+        <!-- OctOTA -->
+        <PreferenceScreen android:key="oct_ota"
+            android:title="@string/oct_ota_title"
+            android:summary="@string/oct_ota_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.oct.ota"
+                android:targetClass="com.oct.ota.OctOTA" />
+        </PreferenceScreen>
 
+        <!-- Automated Installer for Gapps + Root -->
+        <PreferenceScreen android:key="installgapps"
+                android:title="@string/installgapps"
+                android:summary="@string/installgappssum">
+	<intent
+         android:action="android.intent.action.MAIN"
+         android:targetPackage="com.broodplank.installer"
+         android:targetClass="com.broodplank.installer.InstallGapps" />
+        </PreferenceScreen>
 
         <PreferenceScreen android:key="additional_system_update_settings"
                           android:title="@string/additional_system_update_settings_list_item_title">

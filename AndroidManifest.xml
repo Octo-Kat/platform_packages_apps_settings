@@ -1578,22 +1578,6 @@
             android:launchMode="singleTop"
             android:theme="@style/CryptKeeperBlankTheme"
         />
-        
-        <!-- CM activities start -->
-        <activity android:name="Settings$QuickSettingsConfigActivity"
-                android:label="@string/tile_picker_title"
-                android:taskAffinity=""
-                android:excludeFromRecents="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.oct.tentacles.fragments.sb.QuickSettingsTiles" />
-        </activity>
-
-        <activity android:name="com.oct.tentacles.fragments.sb.QuickSettingsTiles" />
-        <!-- CM end activities -->
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
@@ -1601,7 +1585,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.app.action.START_ENCRYPTION" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT" /> />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.CryptKeeperSettings" />
@@ -1719,97 +1703,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        
-
-        <!-- Tentacles Application Methods -->
-        <activity android:name="com.oct.tentacles.SettingsActivity" />
-
-        <!--activity
-            android:name="com.oct.tentacles.fragments.ButtonSettings"
-            android:label="@string/button_settings" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.oct.tentacles.SHORTCUT" />
-            </intent-filter>
-        </activity-->
-        <activity
-            android:name="com.oct.tentacles.fragments.ls.KeyguardSettings"
-            android:label="@string/keyguard_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.oct.tentacles.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.oct.tentacles.fragments.ui.InterfaceSettings"
-            android:label="@string/user_interface" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.oct.tentacles.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.oct.tentacles.fragments.navbar.NavbarTab"
-            android:label="@string/navbar_cat" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.oct.tentacles.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <!--activity
-            android:name="com.oct.tentacles.fragments.pie.PieTab"
-            android:label="@string/pie_control_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.oct.tentacles.SHORTCUT" />
-            </intent-filter>
-        </activity-->
-        <activity
-            android:name="com.oct.tentacles.fragments.sb.SbSettings"
-            android:label="@string/status_bar_title" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="com.oct.tentacles.SHORTCUT" />
-            </intent-filter>
-        </activity>
-        <activity
- 	    android:name="com.oct.tentacles.ShareToClipboard"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"
- 	    android:label="@string/title_clipboard_share" >
-            <intent-filter>
- 	         <action android:name="android.intent.action.SEND"/>
-
- 	         <category android:name="android.intent.category.ALTERNATIVE"/>
- 	         <category android:name="android.intent.category.DEFAULT"/>
-
- 	         <data android:mimeType="text/*" />
-            </intent-filter>
-        </activity>
-        <activity
- 	    android:name="com.oct.tentacles.CreateShortcut"
-            android:theme="@style/Theme.CreateShortCut" >
- 	  <intent-filter>
-               <action android:name="android.intent.action.CREATE_SHORTCUT" />
-
-  	       <category android:name="android.intent.category.DEFAULT" />
-          </intent-filter>
-        </activity>
-        <receiver
-            android:name="com.oct.tentacles.service.ChangeFastChargeStateReceiver" >
-            <intent-filter>
-                <action android:name="com.oct.tentacles.ACTION_CHANGE_FCHARGE_STATE" />
-            </intent-filter>
-        </receiver>
-        <service android:name="com.oct.tentacles.service.ExternalCommandService"
-            android:exported="false" />
-
-        <!-- End of Tentacles Application Methods -->
 
         <receiver android:name=".widget.SettingsAppWidgetProvider"
                 android:label="@string/gadget_title"

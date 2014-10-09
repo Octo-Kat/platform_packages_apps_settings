@@ -23,7 +23,11 @@ import android.content.Intent;
 import com.android.settings.DisplaySettings;
 import com.android.settings.R;
 import com.android.settings.location.LocationSettings;
-import com.oct.tentacles.fragments.VibratorIntensity;
+import com.carbon.fibers.fragments.VibratorIntensity;
+import com.android.settings.Utils;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class BootReceiver extends BroadcastReceiver {
 

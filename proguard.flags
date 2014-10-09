@@ -15,6 +15,11 @@
 -keep class com.android.settings.NotificationStation
 -keep class com.android.settings.nfc.*
 -keep class com.android.settings.privacyguard.*
+<<<<<<< HEAD
+=======
+-keep class com.koushikdutta.**
+-keep class com.android.settings.cyanogenmod.superuser.**
+>>>>>>> Revert "Fix superuser"
 
 # Keep click responders
 -keepclassmembers class com.android.settings.inputmethod.UserDictionaryAddWordActivity {

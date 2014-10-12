@@ -79,16 +79,6 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
-    <!-- OctOS -->
-    <header android:title="@string/header_category_tentacles" />
-
-    <!-- Performance -->
-    <header
-        android:id="@+id/performance_controls"
-        android:fragment="com.brewcrewfoo.performance.activities.MainActivity"
-        android:icon="@drawable/ic_settings_performance"
-        android:title="@string/performance_settings" />
-
     <!-- DEVICE -->
     <header android:id="@+id/device_section"
         android:title="@string/header_category_device" />

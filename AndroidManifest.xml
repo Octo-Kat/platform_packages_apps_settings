@@ -1981,7 +1981,7 @@
         </activity>
         <activity
             android:name="com.oct.tentacles.fragments.PerformanceFragment"
-            android:label="@string/performce_control_title" >
+            android:label="@string/performance_control_title" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

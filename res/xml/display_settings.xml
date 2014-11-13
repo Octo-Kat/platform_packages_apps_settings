@@ -21,8 +21,15 @@
         <com.android.settings.BrightnessPreference
                 android:title="@string/brightness"
                 android:persistent="false"/>
+                
+    <Preference
+        android:key="wallpaper_settings"
+        android:title="@string/wallpaper_settings_title" >
+        <intent android:targetPackage="com.android.wallpapercropper"
+                android:targetClass="com.android.wallpapercropper.WallpaperPickerActivity" />
+     </Preference>
 
-        <PreferenceScreen
+        <!--PreferenceScreen
             android:persistent="false"
             android:key="screencolor_settings"
             android:title="@string/screencolor">
@@ -40,7 +47,11 @@
         <PreferenceScreen
                 android:key="display_rotation"
                 android:fragment="com.android.settings.cyanogenmod.DisplayRotation"
-                android:title="@string/display_rotation_title" />
+                android:title="@string/display_rotation_title" /-->
+                
+        <CheckBoxPreference
+            android:key="accelerometer"
+            android:title="@string/accelerometer_title" />
 
         <ListPreference
                 android:key="screen_timeout"
@@ -55,11 +66,11 @@
                 android:title="@string/screensaver_settings_title"
                 android:fragment="com.android.settings.DreamSettings" />
 
-        <com.android.settings.FontDialogPreference
+        <!--com.android.settings.FontDialogPreference
                 android:key="font_size"
                 android:title="@string/title_font_size"
                 android:summary="@string/summary_font_size"
-                android:dialogTitle="@string/dialog_title_font_size" />
+                android:dialogTitle="@string/dialog_title_font_size" /-->
 
         <!-- DeviceParts Device Specific Display settings -->
         <Preference
@@ -71,7 +82,7 @@
                 android:targetClass="com.cyanogenmod.settings.device.DisplaySettings" />
         </Preference>
 
-        <PreferenceScreen
+        <!--PreferenceScreen
                 android:key="wifi_display"
                 android:title="@string/wifi_display_settings_title"
                 android:fragment="com.android.settings.wfd.WifiDisplaySettings" />
@@ -112,7 +123,7 @@
 
         <PreferenceCategory
             android:key="lights_prefs"
-            android:title="@string/lights_category_title">
+            android:title="@string/lights_category_title"-->
 
             <PreferenceScreen
                     android:key="notification_pulse"
@@ -124,6 +135,6 @@
                     android:title="@string/battery_light_title"
                     android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
 
-        </PreferenceCategory>
+        <!--/PreferenceCategory-->
 
 </PreferenceScreen>

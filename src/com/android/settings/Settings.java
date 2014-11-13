@@ -599,12 +599,12 @@ public class Settings extends PreferenceActivity
                 // Remove Bluetooth Settings if Bluetooth service is not available.
                 if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)) {
                     target.remove(i);
-                }
+                }/**
             } else if (id == R.id.mobile_network_settings) {
-                // Remove mobile network settings if the device doesn't have telephony
+                 Remove mobile network settings if the device doesn't have telephony
                 if (Utils.isWifiOnly(this)) {
                     target.remove(i);
-                }
+                }*/
             } else if (id == R.id.data_usage_settings) {
                 // Remove data usage when kernel module not enabled
                 final INetworkManagementService netManager = INetworkManagementService.Stub
@@ -881,7 +881,7 @@ public class Settings extends PreferenceActivity
                 return HEADER_TYPE_CATEGORY;
             } else if (header.id == R.id.wifi_settings
                     || header.id == R.id.bluetooth_settings
-                    || header.id == R.id.mobile_network_settings
+                    //|| header.id == R.id.mobile_network_settings
                     || header.id == R.id.profiles_settings
                     || header.id == R.id.location_settings) {
                 return HEADER_TYPE_SWITCH;
@@ -1003,9 +1003,9 @@ public class Settings extends PreferenceActivity
                     if (header.id == R.id.wifi_settings) {
                         mWifiEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.bluetooth_settings) {
-                        mBluetoothEnabler.setSwitch(holder.switch_);
+                        mBluetoothEnabler.setSwitch(holder.switch_);/**
                     } else if (header.id == R.id.mobile_network_settings) {
-                        mMobileDataEnabler.setSwitch(holder.switch_);
+                        mMobileDataEnabler.setSwitch(holder.switch_);*/
                     } else if (header.id == R.id.profiles_settings) {
                         mProfileEnabler.setSwitch(holder.switch_);
                     } else if (header.id == R.id.location_settings) {

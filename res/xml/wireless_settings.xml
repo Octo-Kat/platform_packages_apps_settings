@@ -28,11 +28,11 @@
         android:title="@string/sms_application_title"
         android:persistent="false" />
 
-    <Preference
+    <!--Preference
         android:key="voice_plus"
         android:title="@string/voice_plus_title"
         android:summary="@string/voice_plus_summary"
-        android:persistent="false" />
+        android:persistent="false" /-->
 
     <CheckBoxPreference
         android:key="toggle_nfc"
@@ -60,7 +60,7 @@
         android:title="@string/manage_mobile_plan_title"
         android:persistent="false" />
 
-    <PreferenceScreen
+    <!--PreferenceScreen
         android:key="wimax_settings"
         android:title="@string/wimax_settings" >
         <intent
@@ -78,7 +78,7 @@
     <PreferenceScreen
         android:fragment="com.android.settings.ProxySelector"
         android:key="proxy_settings"
-        android:title="@string/proxy_settings_title" />
+        android:title="@string/proxy_settings_title" /-->
 
     <PreferenceScreen
         android:key="cell_broadcast_settings"

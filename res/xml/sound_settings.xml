@@ -19,9 +19,9 @@
         android:key="sound_settings"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceCategory
+    <!--PreferenceCategory
             android:key="category_volume"
-            android:title="@string/volume"/>
+            android:title="@string/volume"/-->
 
     <com.android.settings.RingerVolumePreference
             android:key="ring_volume"
@@ -29,9 +29,9 @@
             android:persistent="false"
             android:streamType="ring" />
 
-    <ListPreference
+    <!--ListPreference
             android:key="ring_mode"
-            android:title="@string/ring_mode_title"
+            android:title="@string/ring_mode _title"
             android:entries="@array/ring_mode_entries"
             android:entryValues="@array/ring_mode_values" />
 
@@ -48,18 +48,18 @@
 
     <PreferenceCategory
             android:key="category_automation_effects"
-            android:title="@string/automation_effects_title"/>
+            android:title="@string/automation_effects_title"/-->
 
     <!-- Quiet hours -->
-    <PreferenceScreen
+    <!--PreferenceScreen
             android:key="quiet_hours"
             android:fragment="com.android.settings.tentacles.QuietHours"
-            android:title="@string/quiet_hours_title" />
+            android:title="@string/quiet_hours_title" /-->
 
     <!-- DSP Manager -->
-    <Preference
+    <!--Preference
             android:key="musicfx"
-            android:title="@string/musicfx_title" />
+            android:title="@string/musicfx_title" /-->
 
     <PreferenceCategory
             android:key="category_calls_and_notification"
@@ -77,7 +77,7 @@
             android:key="vibrate_when_ringing"
             android:title="@string/vibrate_when_ringing_title" />
 
-    <com.android.settings.tentacles.IncreasingRingPreference
+    <!--com.android.settings.tentacles.IncreasingRingPreference
             android:key="increasing_ring"
             android:title="@string/increasing_ring_title"
             android:dialogTitle="@string/increasing_ring_title"
@@ -85,7 +85,7 @@
             android:streamType="ring" />
 
     <PreferenceCategory
-            android:title="@string/volume_notification_description"/>
+            android:title="@string/volume_notification_description"/-->
 
     <com.android.settings.DefaultRingtonePreference
             android:key="notification_sound"
@@ -94,7 +94,7 @@
             android:persistent="false"
             android:ringtoneType="notification" />
 
-    <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+    <!--com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="convert_sound_to_vibration"
             android:title="@string/notification_convert_sound_to_vibration_title"
             android:summary="@string/notification_convert_sound_to_vibration_summary"
@@ -104,7 +104,7 @@
             android:key="vibrate_while_no_alerts"
             android:title="@string/notification_vibrate_during_calls_title"
             android:summary="@string/notification_vibrate_during_calls_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false" /-->
 
     <PreferenceCategory
             android:title="@string/sound_category_system_title"/>
@@ -126,18 +126,18 @@
             android:title="@string/lock_sounds_enable_title"
             android:defaultValue="true" />
 
-    <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+    <!--com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="camera_sounds"
             android:title="@string/camera_sounds_title"
             android:summary="@string/camera_sounds_summary"
-            android:defaultValue="true" />
+            android:defaultValue="true" /-->
 
     <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="haptic_feedback_enabled"
             android:title="@string/haptic_feedback_enable_title"
             android:defaultValue="true" />
 
-    <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+    <!--com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
             android:key="volume_adjust_sounds_enabled"
             android:title="@string/volume_adjust_sounds_enable_title"
             android:summary="@string/volume_adjust_sounds_enable_summary"
@@ -147,15 +147,15 @@
             android:key="emergency_tone"
             android:title="@string/emergency_tone_title"
             android:entries="@array/emergency_tone_entries"
-            android:entryValues="@array/emergency_tone_values" />
+            android:entryValues="@array/emergency_tone_values" /-->
 
     <!-- Dock -->
-    <PreferenceCategory
+    <!--PreferenceCategory
         android:key="dock_category"
-        android:title="@string/dock_settings"/>
+        android:title="@string/dock_settings"/-->
 
     <!-- Do not nest these, or removals in code will break -->
-    <PreferenceScreen
+    <!--PreferenceScreen
         android:key="dock_audio"
         android:title="@string/dock_audio_settings_title">
         <CheckBoxPreference
@@ -191,6 +191,6 @@
             android:key="power_notifications_ringtone"
             android:title="@string/power_notifications_ringtone_title"
             android:dependency="power_notifications"
-            android:persistent="false" />
+            android:persistent="false" /-->
 
 </PreferenceScreen>
